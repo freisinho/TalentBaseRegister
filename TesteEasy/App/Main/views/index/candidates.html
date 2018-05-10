@@ -1,0 +1,48 @@
+﻿<div ng-controller="app.views.index as vm">
+    <div class="formviewerViewHeaderTitle fontTitle">
+        {{L.titleEasyBase}}
+    </div>
+    <div class="margingContainerTitle">
+        <div class="titleSolidBackground">
+            <div class="centeredMargingContainerTitle">
+                {{L.candidates}}
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="table-responsive margingTable">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>{{L.name}}</th>
+                    <th>{{L.email}}</th>
+                    <th>{{L.phone}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="candidate in vm.candidates"
+                    ng-class="{selected: candidate.id ===  vm.selectedCandidateId}"
+                    ng-click="vm.setSelected(candidate.id)">
+                    <td>{{candidate.name}}</td>
+                    <td>{{candidate.email}}</td>
+                    <td>{{candidate.phone}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="row ">
+            <a ng-hide="vm.selectedCandidateId===undefined" ng-click="vm.remove()" class="waves-effect waves-light btn-small teal darken-4">
+                <i class="material-icons left">delete</i> {{L.delete}}
+            </a>
+            <a href="#!candidate/{{vm.selectedCandidateId}}" ng-hide="vm.selectedCandidateId===undefined" class="waves-effect waves-light btn-small teal darken-4">
+                <i class="material-icons left">edit</i> {{L.edit}}
+            </a>
+            <a href="#!candidate" class="waves-effect waves-light btn-small teal darken-4">
+                <i class="material-icons left">add</i> {{L.add}}
+            </a>
+        </div>
+    </div>
+</div>

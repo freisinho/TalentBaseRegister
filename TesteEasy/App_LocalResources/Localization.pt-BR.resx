@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountNumber" xml:space="preserve">
+    <value>Número da conta</value>
+  </data>
+  <data name="AccountType" xml:space="preserve">
+    <value>Tipo de conta</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="Agency" xml:space="preserve">
+    <value>Agência</value>
+  </data>
+  <data name="AreYouComercialArea" xml:space="preserve">
+    <value>Se você atua na área administrativa, atendimento ao cliente ou comercial, preencha ao formulário disponível em</value>
+  </data>
+  <data name="AreYouDesignMessage" xml:space="preserve">
+    <value>Se você atua como designer, preencha ao formulário disponível em</value>
+  </data>
+  <data name="AreYouDeveloperMessage" xml:space="preserve">
+    <value>Se você atua como desenvolvedor ou DBA, continue o preenchimento deste formulário</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Banco</value>
+  </data>
+  <data name="BestTimeToWorkQuestion" xml:space="preserve">
+    <value>Pra você qual é o melhor horário para trabalhar?</value>
+  </data>
+  <data name="Candidate" xml:space="preserve">
+    <value>Candidato</value>
+  </data>
+  <data name="ChooseYourAccountType" xml:space="preserve">
+    <value>Escolha o tipo de conta</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="ComercialAreaFormLink" xml:space="preserve">
+    <value>https://docs.google.com/forms/d/e/1FAIpQLSfdUv82V98P_czD2KYlabp1daLFIRFhCWz6QSWlJhSed1I-kQ/viewform?c=0&amp;w=1</value>
+  </data>
+  <data name="Cpf" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="CreateAccountIfYouDontHave" xml:space="preserve">
+    <value>Bom criar caso não tenha</value>
+  </data>
+  <data name="CrudLink" xml:space="preserve">
+    <value>Crud link</value>
+  </data>
+  <data name="CrudLinkMessage" xml:space="preserve">
+    <value>Insira aqui o link do CRUD (create, update, delete)- ler informações no documento de Boas Vindas citado na descrição do formulário.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Deletar</value>
+  </data>
+  <data name="DesignFormLink" xml:space="preserve">
+    <value>https://docs.google.com/forms/d/e/1FAIpQLSeeezzf3neUTVit3uyDilAu84zRS5Aq2HXEoJGCJjbMSkaBDw/viewform?c=0&amp;w=1</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Endereço de e-mail</value>
+  </data>
+  <data name="EvaluationKnowledgeMessage" xml:space="preserve">
+    <value>Avalie-se de 0 a 5 quanto aos conhecimentos especificados abaixo, e tudo bem se não souber de muitas coisas, o importante é que seja sincero!</value>
+  </data>
+  <data name="HowWeWork" xml:space="preserve">
+    <value>Como trabalhamos</value>
+  </data>
+  <data name="HowWeWorkLink" xml:space="preserve">
+    <value>https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM</value>
+  </data>
+  <data name="Linkedin" xml:space="preserve">
+    <value>Linkedin</value>
+  </data>
+  <data name="MethodPaymentQuestion" xml:space="preserve">
+    <value>Você pode optar em receber seu pagamento pelo Paypal, PagSeguro ou contas bancarias convencionais</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="OnlyFromBrazilian" xml:space="preserve">
+    <value>Apenas para brasileiros</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Portifolio" xml:space="preserve">
+    <value>Portifólio</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Obrigatório</value>
+  </data>
+  <data name="SalaryRequirementsPerHourQuestion" xml:space="preserve">
+    <value>Qual sua pretensão salarial por hora?</value>
+  </data>
+  <data name="Skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="WelcomeDescription" xml:space="preserve">
+    <value>Já agradecemos o seu contato,  você não precisa preencher o formulário completo caso já tenha essas informações no seu linkedin, e no final confira os links dos tutoriais.</value>
+  </data>
+  <data name="WelcomeToEasy" xml:space="preserve">
+    <value>Bem-vindo à Easy</value>
+  </data>
+  <data name="WhatsApp" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="WillingnessToWorkQuestion" xml:space="preserve">
+    <value>Qual é sua disponibilidade para trabalhar hoje?</value>
+  </data>
+  <data name="Afternoon" xml:space="preserve">
+    <value>Tarde (de 13:00 ás 18:00)</value>
+  </data>
+  <data name="BankInformation" xml:space="preserve">
+    <value>Informações bancária</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Comercial (de 08:00 as 18:00)</value>
+  </data>
+  <data name="Chain" xml:space="preserve">
+    <value>Corrente</value>
+  </data>
+  <data name="ClickMe" xml:space="preserve">
+    <value>Clique Aqui</value>
+  </data>
+  <data name="Dawn" xml:space="preserve">
+    <value>Madrugada (de 22:00 em diante)</value>
+  </data>
+  <data name="FourToSix" xml:space="preserve">
+    <value>De 4 á 6 horas por dia</value>
+  </data>
+  <data name="Knowledge" xml:space="preserve">
+    <value>Conhecimentos</value>
+  </data>
+  <data name="Morning" xml:space="preserve">
+    <value>Manhã (de 08:00 ás 12:00)</value>
+  </data>
+  <data name="Night" xml:space="preserve">
+    <value>Noite (de 19:00 as 22:00)</value>
+  </data>
+  <data name="OccupationArea" xml:space="preserve">
+    <value>Área de atuação</value>
+  </data>
+  <data name="OnlyWeekends" xml:space="preserve">
+    <value>Apenas finais de semana</value>
+  </data>
+  <data name="OtherKnowledgeQuestion" xml:space="preserve">
+    <value>Conhece mais alguma linguagem ou framework que não foi listado aqui em cima? Conte para nos e se auto avalie ainda de 0 a 5.</value>
+  </data>
+  <data name="Savings" xml:space="preserve">
+    <value>Poupança</value>
+  </data>
+  <data name="SixToEight" xml:space="preserve">
+    <value>De 6 á 8 horas por dia</value>
+  </data>
+  <data name="TitleEasyBase" xml:space="preserve">
+    <value>Banco de Talentos - Easy Communication &amp; Technology (Desenvolvedores)</value>
+  </data>
+  <data name="TutorialLink" xml:space="preserve">
+    <value>https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM</value>
+  </data>
+  <data name="TutorialsMessage" xml:space="preserve">
+    <value>Confira nossos tutoriais e material explicando como a empresa funciona</value>
+  </data>
+  <data name="UpToEight" xml:space="preserve">
+    <value>Acima de 8 horas por dia (tem certeza?)</value>
+  </data>
+  <data name="UpToFour" xml:space="preserve">
+    <value>Até 4 horas por dia</value>
+  </data>
+  <data name="BankOptions" xml:space="preserve">
+    <value>Itau, Bradesco, etc...</value>
+  </data>
+  <data name="Candidates" xml:space="preserve">
+    <value>Candidatos</value>
+  </data>
+  <data name="CurrentYear" xml:space="preserve">
+    <value>2018</value>
+  </data>
+  <data name="DeveloperJobs" xml:space="preserve">
+    <value>Vagas para programador</value>
+  </data>
+  <data name="HomeOffice" xml:space="preserve">
+    <value>Home Office</value>
+  </data>
+  <data name="JobsVideo" xml:space="preserve">
+    <value>https://www.youtube.com/watch?v=Q4UA8oate_I</value>
+  </data>
+  <data name="Knowledges" xml:space="preserve">
+    <value>Conhecimentos</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bem-vindo</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="Portuguese" xml:space="preserve">
+    <value>Português</value>
+  </data>
+  <data name="Tutorial" xml:space="preserve">
+    <value>Tutorial</value>
+  </data>
+  <data name="Tutorials" xml:space="preserve">
+    <value>Tutoriais</value>
+  </data>
+</root>

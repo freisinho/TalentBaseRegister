@@ -1,0 +1,9 @@
+﻿namespace TesteEasy.Models.Dto
+{
+    public class GetTypesItem
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Text { get; set; }
+    }
+}

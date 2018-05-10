@@ -1,0 +1,38 @@
+﻿@using TesteEasy.App_LocalResources;
+@{
+    Layout = null;
+    if (!Request["lang"].IsEmpty())
+    {
+        Culture = UICulture = Request["lang"];
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>  @Localization.TitleEasyBase</title>
+
+    <link href="@Url.Content("~/Content/Css/candidato.css")" rel="stylesheet" type="text/css" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="~/Content/Css/materialize/materialize.min.css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body class="basePageBackground">
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

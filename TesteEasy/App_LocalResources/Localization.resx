@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountNumber" xml:space="preserve">
+    <value>Account number</value>
+  </data>
+  <data name="AccountType" xml:space="preserve">
+    <value>Account Type</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Agency" xml:space="preserve">
+    <value>Agency</value>
+  </data>
+  <data name="AreYouComercialArea" xml:space="preserve">
+    <value>If you work in the administrative, customer service or commercial area, fill out the form available at</value>
+  </data>
+  <data name="AreYouDesignMessage" xml:space="preserve">
+    <value>If you act as a designer, fill out the form available at</value>
+  </data>
+  <data name="AreYouDeveloperMessage" xml:space="preserve">
+    <value>If you are a developer or DBA, continue filling out this form</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="BestTimeToWorkQuestion" xml:space="preserve">
+    <value>What's the best time to work for you?</value>
+  </data>
+  <data name="Candidate" xml:space="preserve">
+    <value>Candidate</value>
+  </data>
+  <data name="ChooseYourAccountType" xml:space="preserve">
+    <value>Choose your account type</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ComercialAreaFormLink" xml:space="preserve">
+    <value>https://docs.google.com/forms/d/e/1FAIpQLSfdUv82V98P_czD2KYlabp1daLFIRFhCWz6QSWlJhSed1I-kQ/viewform?c=0&amp;w=1</value>
+  </data>
+  <data name="Cpf" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="CreateAccountIfYouDontHave" xml:space="preserve">
+    <value>Please create an account if you don't have yet</value>
+  </data>
+  <data name="CrudLink" xml:space="preserve">
+    <value>Crud link</value>
+  </data>
+  <data name="CrudLinkMessage" xml:space="preserve">
+    <value>Enter the link here CRUD (create, update, delete)- read information in the welcome document quoted in the form description.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DesignFormLink" xml:space="preserve">
+    <value>https://docs.google.com/forms/d/e/1FAIpQLSeeezzf3neUTVit3uyDilAu84zRS5Aq2HXEoJGCJjbMSkaBDw/viewform?c=0&amp;w=1</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>E-mail address</value>
+  </data>
+  <data name="EvaluationKnowledgeMessage" xml:space="preserve">
+    <value>Rate yourself from 0 to 5 for the knowledge specified below, and that's okay if you do not know many things, the important thing is to be honest!</value>
+  </data>
+  <data name="HowWeWork" xml:space="preserve">
+    <value>How we work</value>
+  </data>
+  <data name="HowWeWorkLink" xml:space="preserve">
+    <value>https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM</value>
+  </data>
+  <data name="Linkedin" xml:space="preserve">
+    <value>Linkedin</value>
+  </data>
+  <data name="MethodPaymentQuestion" xml:space="preserve">
+    <value>You can choose to receive your payment through Paypal, PagSeguro or conventional bank accounts</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>Of</value>
+  </data>
+  <data name="OnlyFromBrazilian" xml:space="preserve">
+    <value>Only for Brazilians</value>
+  </data>
+  <data name="OtherKnowledgeQuestion" xml:space="preserve">
+    <value>Do you know any other language or framework that was not listed above? Tell us and evaluate yourself from 0 to 5.</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Portifolio" xml:space="preserve">
+    <value>Portifolio</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="SalaryRequirementsPerHourQuestion" xml:space="preserve">
+    <value>What is your hourly salary requirements?</value>
+  </data>
+  <data name="Skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="WelcomeDescription" xml:space="preserve">
+    <value>We appreciate your contact, check that you do not need to fill out the full form if already has this information on its linkedin, and check out the links at the end of the tutorials (developers).</value>
+  </data>
+  <data name="WelcomeToEasy" xml:space="preserve">
+    <value>Welcome to Easy</value>
+  </data>
+  <data name="WhatsApp" xml:space="preserve">
+    <value>WhatsApp</value>
+  </data>
+  <data name="WillingnessToWorkQuestion" xml:space="preserve">
+    <value>What is your willingness to work today?</value>
+  </data>
+  <data name="Afternoon" xml:space="preserve">
+    <value>Afternoon (from 1:00 p.m. to 6:00 p.m.)</value>
+  </data>
+  <data name="BankInformation" xml:space="preserve">
+    <value>Bank Information</value>
+  </data>
+  <data name="Business" xml:space="preserve">
+    <value>Business (from 08:00 a.m. to 06:00 p.m.)</value>
+  </data>
+  <data name="ClickMe" xml:space="preserve">
+    <value>Click here</value>
+  </data>
+  <data name="Dawn" xml:space="preserve">
+    <value>Dawn (from 10 p.m. onwards)</value>
+  </data>
+  <data name="FourToSix" xml:space="preserve">
+    <value>4 to 6 hours per day</value>
+  </data>
+  <data name="Morning" xml:space="preserve">
+    <value>Morning (from 08:00 to 12:00)</value>
+  </data>
+  <data name="Night" xml:space="preserve">
+    <value>Night (7:00 p.m. to 10:00 p.m.)</value>
+  </data>
+  <data name="OccupationArea" xml:space="preserve">
+    <value>Occupation area</value>
+  </data>
+  <data name="OnlyWeekends" xml:space="preserve">
+    <value>Only weekends</value>
+  </data>
+  <data name="SixToEight" xml:space="preserve">
+    <value>6 to 8 hours per day</value>
+  </data>
+  <data name="TitleEasyBase" xml:space="preserve">
+    <value>Talent Base - Easy Communication &amp; Technology (Developers)</value>
+  </data>
+  <data name="TutorialLink" xml:space="preserve">
+    <value>https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM</value>
+  </data>
+  <data name="TutorialsMessage" xml:space="preserve">
+    <value>Check out our tutorials and material explaining how the company works</value>
+  </data>
+  <data name="UpToEight" xml:space="preserve">
+    <value>Up to 8 hours a day (are you sure?)</value>
+  </data>
+  <data name="UpToFour" xml:space="preserve">
+    <value>Up to 4 hours per day</value>
+  </data>
+  <data name="BankOptions" xml:space="preserve">
+    <value>Itau, Bradesco, etc...</value>
+  </data>
+  <data name="Candidates" xml:space="preserve">
+    <value>Candidates</value>
+  </data>
+  <data name="CurrentYear" xml:space="preserve">
+    <value>2018</value>
+  </data>
+  <data name="DeveloperJobs" xml:space="preserve">
+    <value>Developer Jobs</value>
+  </data>
+  <data name="HomeOffice" xml:space="preserve">
+    <value>Home Office</value>
+  </data>
+  <data name="JobsVideo" xml:space="preserve">
+    <value>https://www.youtube.com/watch?v=Q4UA8oate_I</value>
+  </data>
+  <data name="Knowledges" xml:space="preserve">
+    <value>Knowledges</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Portuguese" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="Tutorial" xml:space="preserve">
+    <value>Tutorial</value>
+  </data>
+  <data name="Tutorials" xml:space="preserve">
+    <value>Tutorials</value>
+  </data>
+  <data name="Chain" xml:space="preserve">
+    <value>Chain</value>
+  </data>
+  <data name="Savings" xml:space="preserve">
+    <value>Savings</value>
+  </data>
+</root>

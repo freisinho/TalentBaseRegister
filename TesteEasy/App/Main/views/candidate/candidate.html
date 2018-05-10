@@ -1,0 +1,253 @@
+﻿<div ng-controller="app.views.candidate as vm">
+    <div class="formviewerViewHeaderTitle fontTitle">
+        {{L.titleEasyBase}}
+    </div>
+    <div>
+        <div ng-hide="vm.actualPage !=1">
+            <div class="margingContainerTitle">
+                <div class="titleSolidBackground">
+                    <div class="centeredMargingContainerTitle">
+                        {{L.welcome}}
+                    </div>
+                </div>
+            </div>
+            <div class="formHeaderDescription">
+                <br><a target="_blank" href="{{L.jobsVideo}}">{{L.developerJobs}} - {{L.homeOffice}} - {{L.currentYear}}</a>
+                <div>{{L.welcomeDescription}}</div>
+                <p>{{L.howWeWork}}: <a target="_blank" href="{{L.howWeWorkLink}}">{{L.welcomeToEasy}}</a></p>
+                <p class="itemRequiredAsterisk"><span>*</span>{{L.required}}</p>
+            </div>
+            <div class="row">
+                <form id="candidateFormOne" name="candidateFormOne" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="email"
+                                   type="email"
+                                   value="{{vm.candidate.email.address}}"
+                                   ng-model="vm.candidate.email.address"
+                                   maxlength="160"
+                                   class="validate"
+                                   required>
+                            <label ng-class="{active: vm.candidateId }" for="email">
+                                {{L.emailAddress}}
+                                <span class="itemRequiredAsterisk">*</span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div ng-hide="vm.actualPage !=2">
+
+            <div class="margingContainerTitle">
+                <div class="titleSolidBackground">
+                    <div class="centeredMargingContainerTitle">{{L.occupationArea}}</div>
+                </div>
+            </div>
+            <div class="formHeaderDescription">
+                <div>
+                    {{L.areYouDeveloperMessage}}
+                    <p>{{L.areYouDesignMessage}} <a target="_blank" href="{{L.designFormLink}}">({{L.clickMe}})</a></p>
+                    <p>{{L.areYouComercialArea}} <a target="_blank" href="{{L.comercialAreaFormLink}}">({{L.clickMe}})</a><br></p>
+                    <p></p>
+                </div>
+                <p class="itemRequiredAsterisk"><span>*</span>{{L.required}}</p>
+            </div>
+            <div class="row">
+                <form id="candidateFormTwo" name="candidateFormTwo" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="name" type="text" value="{{vm.candidate.name}}" ng-model="vm.candidate.name" maxlength="160" class="validate" required>
+                            <label ng-class="{active: vm.candidateId}" for="name">{{L.name}} <span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input class="validate" id="skype" maxlength="160" ng-model="vm.candidate.skype.name"  type="text" value="{{"vm.candidate.skype.name}}" required>
+                            <label ng-class="{active: vm.candidateId}" for="skype">{{L.skype}} ( {{L.createAccountIfYouDontHave}}) <span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="phone" ng-model="vm.candidate.phone.number" value="{{vm.candidate.phone.number}}" type="text" maxlength="32" class="validate" required>
+                            <label ng-class="{active: vm.candidateId}" for="phone">{{L.phone}} ({{L.whatsApp}}) <span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="linkedin" ng-model="vm.candidate.linkedin" value="{{vm.candidate.linkedin}}" maxlength="160" type="text">
+                            <label ng-class="{active: vm.candidateId}" for="linkedin">{{L.linkedin}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="city" ng-model="vm.candidate.address.city.name" value="{{vm.candidate.address.city.name}}" type="text" class="validate" required>
+                            <label ng-class="{active: vm.candidateId}" for="city">{{L.city}} <span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="state" ng-model="vm.candidate.address.city.state.name" value="{{vm.candidate.address.city.state.name}}" type="text" class="validate" required>
+                            <label ng-class="{active: vm.candidateId}" for="state">{{L.state}} <span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="portifolio" ng-model="vm.candidate.portifolio" value="{{vm.candidate.portifolio}}" maxlength="220" type="text">
+                            <label ng-class="{active: vm.candidateId}" for="portifolio">{{L.portifolio}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select name="willingness" id="willingness" ng-model="vm.candidate.willingness">
+                                <option value="" disabled selected>{{L.willingnessToWorkQuestion}} </option>
+                                <option ng-repeat="option in vm.willingnessList" ng-value="option.id">{{L[(option.name | lowerCamelCase)]}}</option>
+                            </select>
+                            <label>{{L.willingnessToWorkQuestion}}<span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select class="validate" ng-model="vm.candidate.timeToWork" name="timeToWork" id="timeToWork">
+                                <option value="" disabled selected> {{L.bestTimeToWorkQuestion}} </option>
+                                <option ng-repeat="option in vm.timesToWork" ng-value="option.id"> {{L[(option.name | lowerCamelCase)]}}</option>
+                            </select>
+                            <label> {{L.bestTimeToWorkQuestion}}<span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="salary" ng-model="vm.candidate.salary" value="{{vm.candidate.salary}}" type="number" class="validate" required>
+                            <label class="active" for="salary">{{L.salaryRequirementsPerHourQuestion}}<span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div ng-hide="vm.actualPage !=3">
+            <div class="margingContainerTitle">
+                <div class="titleSolidBackground">
+                    <div class="centeredMargingContainerTitle">{{L.bankInformation}}</div>
+                </div>
+            </div>
+            <div class="formHeaderDescription">
+                <div>
+                    {{L.methodPaymentQuestion}}<br>
+                    <p></p>
+                </div>
+                <p class="itemRequiredAsterisk"><span>*</span>{{L.required}}</p>
+            </div>
+            <div class="row">
+                <form id="candidateFormThree" name="candidateFormThree" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="cpf" ng-model="vm.candidate.bank.cpf" value="{{vm.candidate.bank.cpf}}" type="text">
+                            <label ng-class="{active: vm.candidateId}" for="cpf">{{L.onlyFromBrazilian}} / {{L.cpf}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="bank" ng-model="vm.candidate.bank.name" value="{{vm.candidate.bank.name}}" type="text">
+                            <label ng-class="{active: vm.candidateId}" for="bank">{{L.bank}} ( {{L.bankOptions}})</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="agency" ng-model="vm.candidate.bank.agency" value="{{m.candidate.bank.agency}}" type="text">
+                            <label ng-class="{active: vm.candidateId}" for="agency">{{L.agency}}</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select name="accountType" id="accountType" ng-model="vm.candidate.accountType">
+                                <option value="" disabled selected>{{L.chooseYourAccountType}} </option>
+                                <option ng-repeat="option in vm.accountTypes" ng-value="option.id"> {{L[(option.name | lowerCamelCase)]}}</option>
+                            </select>
+                            <label>{{L.accountType}}</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="accountnumber" ng-model="vm.candidate.bank.account" value="{{m.candidate.bank.account}}" type="text">
+                            <label ng-class="{active: vm.candidateId}" for="accountnumber">{{L.accountNumber}}</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div ng-hide="vm.actualPage !=4">
+            <div class="margingContainerTitle">
+                <div class="titleSolidBackground">
+                    <div class="centeredMargingContainerTitle">{{L.knowledges}}</div>
+                </div>
+            </div>
+            <div class="formHeaderDescription">
+                <div>
+                    {{L.evaluationKnowledgeMessage}}<br>
+                    <p></p>
+                </div>
+                <p class="itemRequiredAsterisk"><span>*</span>{{L.required}}</p>
+            </div>
+            <div class="row">
+                <div class="row" ng-repeat="option in vm.candidate.candidateKnowledge">
+                    <div class="tecnologyNameFontConfiguration fontTitle">
+                        {{option.name}} <span class="itemRequiredAsterisk">*</span>
+                    </div>
+                    <br>
+                    <div class="col s12 m8 l9">
+                        <div class="row">
+                            <span ng-repeat="num in [0,1,2,3,4,5]" class="col s2 " style="padding-left: 20px">{{num}}</span>
+                        </div>
+                        <div class="row">
+                            <form action="#">
+                                <div class="col s2" ng-repeat="item in [0,1,2,3,4,5]">
+                                    <label>
+                                        <input ng-model="option.evaluation" class="with-gap" name="{{option.name | lowercase}}" ng-value="item" type="radio" />
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>{{L.otherKnowledgeQuestion}}</div>
+                    <div class="input-field col s12">
+                        <input ng-model="vm.candidate.otherKnowledge" value="{{vm.candidate.otherKnowledge}}" id="other" type="text">
+                        <label ng-class="{active: vm.candidateId}" for="other"></label>
+                    </div>
+                </div>
+                <div class="margingContainerTitle">
+                    <div class="titleSolidBackground">
+                        <div class="centeredMargingContainerTitle">{{L.crudLinkMessage}}</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <form id="candidateFormFour" name="candidateFormFour">
+                        <div class="input-field col s12">
+                            <input id="crud" type="text" ng-model="vm.candidate.crudLink" value="{{vm.candidate.crudLink}}" class="validate" required>
+                            <label ng-class="{active: vm.candidateId}" for="crud">{{L.crudLink}}<span class="itemRequiredAsterisk">*</span></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row ">
+            <a href="#!" class="waves-effect waves-light btn-small teal darken-4"><i class="material-icons left ">list</i>{{L.candidates}}</a>
+            <a ng-hide="vm.actualPage ==1" ng-click="vm.backPage()" class="waves-effect waves-light btn-small teal darken-4">{{L.back}} <i class="material-icons left">arrow_back</i></a>
+            <a ng-hide="vm.actualPage ==4" ng-click="vm.nextPage()" class="waves-effect waves-light btn-small teal darken-4">{{L.next}} <i class="material-icons right">arrow_forward</i></a>
+            <a ng-hide="vm.actualPage !=4" ng-click="vm.submit()" class="waves-effect waves-light btn-small teal darken-4">{{L.submit}} <i class="material-icons right">send</i></a>
+        </div>
+        <div class="row">
+            <label>{{L.page}} {{vm.actualPage}} {{L.of | lowercase}} 4</label>
+            <div class="progress">
+                <div class="determinate  pink darken-4" style="width: {{vm.progress}}%"></div>
+            </div>
+        </div>
+    </div>
+</div>

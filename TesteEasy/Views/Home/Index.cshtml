@@ -1,0 +1,60 @@
+﻿<div ng-app="candidate" ng-controller="app.views.layout as vm">
+    <ul id="dropdown1" class="dropdown-content">
+        <li ng-if=" vm.currentLanguage!='pt-BR'"><a ng-click="vm.changeCulture('pt-BR')"  href="#!">{{L.portuguese}}</a></li>
+        <li  ng-if=" vm.currentLanguage!='en-US'"><a ng-click="vm.changeCulture('en-US')" href="#!">{{L.english}}</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper navBackground">
+            <a href="https://www.easycomtec.com/" target="_blank" class="brand-logo">
+
+                <img class="logo-easy" id="logo" src="https://easycomtec.blob.core.windows.net/easycomtec/logo-header.png" />
+
+
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#!"><i class="material-icons left waves-effect waves-light">people</i>{{L.candidates}}</a></li>
+                <li>
+                    <a target="_blank" href="https://docs.google.com/document/d/145QuJ8-efr-pmNGV-2DOOGHD-1dc3MERSeL5g0XoqmM">
+                        <i class="material-icons left">school</i>{{L.tutorials}}
+                    </a>
+                </li>
+
+
+                <li>
+                    <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                        {{L.language}}
+                        <i class="material-icons  left">translate</i>
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="imageBackgroundSize imageTopBackground"></div>
+    <div class="formviewerCenteredContent">
+        <div class="formViewerInitialVerticalAlign">
+            <div class="formviewerViewAccentBanner accentBackground"></div>
+            <div class="formViewerHeaderPadding">
+                <div ng-app="candidate">
+                    <ng-view></ng-view>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts
+{
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/materialize/materialize.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/parsley/parsley.min.js"></script>
+    <script src="~/Scripts/i18n/pt-br.js"></script>
+    <script src="~/App/Main/app.js"></script>
+    <script src="~/App/Main/views/index/candidates.js"></script>
+    <script src="~/App/Main/views/candidate/candidate.js"></script>
+    <script src="~/App/Main/views/layout/layout.js"></script>
+}
+
