@@ -12,7 +12,7 @@
             var currentLanguage = "";
 
             this.getResources = function() {
-                var response = $http.get('http://localhost:54805/api/accessresources/"current"');
+                var response = $http.get('/api/accessresources/"current"');
                 return response;
             };
         });
@@ -29,12 +29,12 @@
             function getResources(culture) {
                 this.currentLanguage = culture;
 
-                return $http.get("http://localhost:54805/api/accessresources/" + culture);
+                return $http.get("/api/accessresources/" + culture);
             }
 
             function getResourcesIndex() {
 
-                return $http.get("http://localhost:54805/api/accessresources/" + this.currentLanguage);
+                return $http.get("/api/accessresources/" + this.currentLanguage);
             }
         });
 
