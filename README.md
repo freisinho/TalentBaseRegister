@@ -25,5 +25,5 @@ update-database
 [![Update a candidate](https://github.com/freisinho/TalentBaseRegister/blob/master/Prints/tela4.png)](https://github.com/freisinho/TalentBaseRegister/blob/master/Prints/tela4.png)
 
 ### Remove a candidate
-[![Remove a candidate](https://github.com/freisinho/TalentBaseRegister/blob/master/Prints/tel5.png)](https://github.com/freisinho/TalentBaseRegister/blob/master/Prints/tela5.png)
+[![Remove a candidate](https://github.com/freisinho/TalentBaseRegister/blob/master/Prints/tela5.png)](https://github.com/freisinho/TalentBaseRegister/blob/master/Prints/tela5.png)
 
